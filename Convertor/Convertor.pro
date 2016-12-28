@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-12-23T17:56:02
+# Project created by QtCreator 2016-12-27T15:08:23
 #
 #-------------------------------------------------
 
@@ -13,8 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        convertor.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += convertor.h
 
-FORMS    += mainwindow.ui
+FORMS    += convertor.ui
