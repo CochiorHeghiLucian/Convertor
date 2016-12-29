@@ -128,11 +128,6 @@
     </property>
     <item>
      <property name="text">
-      <string>Unitate</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
       <string>a</string>
      </property>
     </item>
@@ -278,7 +273,7 @@
     </item>
     <item>
      <property name="text">
-      <string>gak(US)</string>
+      <string>gal(US)</string>
      </property>
     </item>
     <item>
@@ -289,6 +284,11 @@
     <item>
      <property name="text">
       <string>l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m³</string>
      </property>
     </item>
     <item>
@@ -1236,11 +1236,6 @@
     </property>
     <item>
      <property name="text">
-      <string>Unitate</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
       <string>a</string>
      </property>
     </item>
@@ -1331,7 +1326,7 @@
     </item>
     <item>
      <property name="text">
-      <string>gak(US)</string>
+      <string>gal(US)</string>
      </property>
     </item>
     <item>
@@ -1342,6 +1337,11 @@
     <item>
      <property name="text">
       <string>l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m³</string>
      </property>
     </item>
     <item>
