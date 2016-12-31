@@ -5,15 +5,13 @@
 
 
 QString rezArie="";
-double  arieMp2,arie,lungimeM,lungime,volumMp3,volum;
+double  arieMp2,arie,lungimeM,lungime,volumMp3,volum,timpMin,timp,vitezaMps,viteza,temperaturaC,temperatura,masaKg,masa,energieJ,energie;
 
 Convertor::Convertor(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Convertor)
 {
     ui->setupUi(this);
-
-
 
 }
 
@@ -143,7 +141,7 @@ void Convertor::transLungimeM(int index)
     else if(index == 6) lungimeM = ui->lineEdit_2->text().toDouble() * 1609.344;
     else if(index == 7) lungimeM = ui->lineEdit_2->text().toDouble() * 1852;
     else if(index == 8) lungimeM = ui->lineEdit_2->text().toDouble() * 0.9144002494;
-   \
+
     transLungime(ui->comboBox_16->currentIndex());
 
 
@@ -344,4 +342,599 @@ void Convertor::on_pushButton_5_clicked()
 {
     ui->lineEdit_3->setText("");
     ui->lineEdit_20->setText("");
+}
+
+//Timp
+
+void Convertor::transTimpMin(int index)
+{
+    if(index == 0) timpMin = ui->lineEdit_4->text().toDouble() * 525600;
+    else if(index == 1) timpMin = ui->lineEdit_4->text().toDouble() * 43800;
+    else if(index == 2) timpMin = ui->lineEdit_4->text().toDouble() * 10080;
+    else if(index == 3) timpMin = ui->lineEdit_4->text().toDouble() * 1440;
+    else if(index == 4) timpMin = ui->lineEdit_4->text().toDouble() * 60;
+    else if(index == 5) timpMin = ui->lineEdit_4->text().toDouble();
+    else if(index == 6) timpMin = ui->lineEdit_4->text().toDouble() * 0.016666666666666666;
+    else if(index == 7) timpMin = ui->lineEdit_4->text().toDouble() * 0.0016666666666666668;
+    else if(index == 8) timpMin = ui->lineEdit_4->text().toDouble() * 0.00016666666666666666;
+
+    transTimp(ui->comboBox_15->currentIndex());
+
+
+}
+
+void Convertor::transTimp(int index)
+{
+
+     if(index == 0)
+        {
+             timp = timpMin * 0.000001902587519025875;
+             ui->lineEdit_16->setText(QString::number(timp,'g',14));
+        }
+    else
+            if(index == 1)
+            {
+                timp = timpMin * 0.000022831050228310503;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+    else
+            if(index == 2)
+            {
+                timp = timpMin * 0.0000992063492063492;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+    else
+            if(index == 3)
+            {
+                timp = timpMin * 0.0006944444444444445;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+    else
+            if(index == 4)
+            {
+                timp = timpMin * 0.016666666666666666;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+    else
+            if(index == 5)
+            {
+                timp = timpMin;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+    else
+            if(index == 6)
+            {
+                timp = timpMin * 60 ;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+    else
+            if(index == 7)
+            {
+                timp = timpMin * 600;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+    else
+            if(index == 8)
+            {
+                timp = timpMin * 6000;
+                ui->lineEdit_16->setText(QString::number(timp,'g',14));
+            }
+
+}
+
+void Convertor::on_comboBox_4_activated(int index)
+{
+    transTimpMin(index);
+}
+
+void Convertor::on_comboBox_15_activated(int index)
+{
+      transTimpMin(ui->comboBox_4->currentIndex());
+}
+
+void Convertor::on_pushButton_4_clicked()
+{
+    ui->lineEdit_4->setText("");
+    ui->lineEdit_16->setText("");
+}
+
+//Viteza
+
+void Convertor::transVitezaMps(int index)
+{
+    if(index == 0) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.0001666667;
+    else if(index == 1) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.01;
+    else if(index == 2) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.000084667;
+    else if(index == 3) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.00508;
+    else if(index == 4) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.3048;
+    else if(index == 5) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.000084667;
+    else if(index == 6) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.3048;
+    else if(index == 7) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.0254;
+    else if(index == 8) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.0254;
+    else if(index == 9) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.27777778;
+    else if(index == 10) vitezaMps = ui->lineEdit_5->text().toDouble() * 16.666667;
+    else if(index == 11) vitezaMps = ui->lineEdit_5->text().toDouble() * 1000;
+    else if(index == 12) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.000277778;
+    else if(index == 13) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.016666667;
+    else if(index == 14) vitezaMps = ui->lineEdit_5->text().toDouble();
+    else if(index == 15) vitezaMps = ui->lineEdit_5->text().toDouble() * 1609.344;
+    else if(index == 16) vitezaMps = ui->lineEdit_5->text().toDouble() * 26.8224;
+    else if(index == 17) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.44704;
+    else if(index == 18) vitezaMps = ui->lineEdit_5->text().toDouble();
+    else if(index == 19) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.5144;
+    else if(index == 20) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.000254;
+    else if(index == 21) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.015240004;
+    else if(index == 22) vitezaMps = ui->lineEdit_5->text().toDouble() * 0.9144002494;
+
+    transViteza(ui->comboBox_13->currentIndex());
+
+
+
+}
+
+void Convertor::transViteza(int index)
+{
+
+    if(index == 0)
+       {
+            viteza = vitezaMps * 5999.99880000024;
+            ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+       }
+   else
+           if(index == 1)
+           {
+               viteza = vitezaMps * 100;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 2)
+           {
+               viteza = vitezaMps * 11810.977122137316;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 3)
+           {
+               viteza = vitezaMps * 196.85039370078738;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 4)
+           {
+               viteza = vitezaMps * 3.280839895013123;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 5)
+           {
+               viteza = vitezaMps * 11810.977122137316;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 6)
+           {
+               viteza = vitezaMps * 3.280839895013123 ;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 7)
+           {
+               viteza = vitezaMps * 39.37007874015748;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 8)
+           {
+               viteza = vitezaMps * 39.37007874015748;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+
+
+   else
+            if(index == 9)
+           {
+            viteza = vitezaMps * 3.5999999712000004;
+            ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 10)
+           {
+               viteza = vitezaMps * 0.05999999880000002;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 11)
+           {
+               viteza = vitezaMps * 0.001;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 12)
+           {
+               viteza = vitezaMps * 3599.9971200023037;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 13)
+           {
+               viteza = vitezaMps * 59.99999880000003;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 14)
+           {
+               viteza = vitezaMps;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 15)
+           {
+               viteza = vitezaMps * 0.0006213711922373339 ;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 16)
+           {
+               viteza = vitezaMps * 0.03728227153424004;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 17)
+           {
+               viteza = vitezaMps * 2.2369362920544025;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+
+
+    if(index == 18)
+       {
+            viteza = vitezaMps;
+            ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+       }
+   else
+           if(index == 19)
+           {
+               viteza = vitezaMps * 1.944012441679627;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 20)
+           {
+               viteza = vitezaMps * 3937.0078740157483;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 21)
+           {
+               viteza = vitezaMps * 65.61678067801033;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+   else
+           if(index == 22)
+           {
+               viteza = vitezaMps * 1.0936130000578717;
+               ui->lineEdit_11->setText(QString::number(viteza,'g',14));
+           }
+
+}
+
+void Convertor::on_comboBox_5_activated(int index)
+{
+    transVitezaMps(index);
+}
+
+void Convertor::on_comboBox_13_activated(int index)
+{
+    transVitezaMps(ui->comboBox_5->currentIndex());
+}
+
+void Convertor::on_pushButton_9_clicked()
+{
+    ui->lineEdit_5->setText("");
+    ui->lineEdit_11->setText("");
+}
+
+//Temperatura
+
+void Convertor::transTemperaturaC(int index)
+{
+    temperaturaC = 0;
+
+    if(index == 0) temperaturaC = ui->lineEdit_6->text().toDouble();
+    else if(index == 1) temperaturaC = (ui->lineEdit_6->text().toDouble() - 32) / 1.8;
+    else if(index == 2) temperaturaC = ui->lineEdit_6->text().toDouble() - 273.15;
+    else if(index == 3) temperaturaC = (ui->lineEdit_6->text().toDouble() - 491.67) / 1.8;
+
+    transTemperatura(ui->comboBox_20->currentIndex());
+}
+
+void Convertor::transTemperatura(int index)
+{
+    temperatura = 0;
+
+    if(index == 0)
+       {
+            temperatura = temperaturaC;
+            ui->lineEdit_14->setText(QString::number(temperatura,'g',14));
+       }
+   else
+           if(index == 1)
+           {
+               temperatura = temperaturaC * 1.8 + 32;
+               ui->lineEdit_14->setText(QString::number(temperatura,'g',14));
+           }
+   else
+           if(index == 2)
+           {
+               temperatura = temperaturaC + 273.15;
+               ui->lineEdit_14->setText(QString::number(temperatura,'g',14));
+           }
+   else
+           if(index == 3)
+           {
+               temperatura = temperaturaC * 1.8 + 491.67;
+               ui->lineEdit_14->setText(QString::number(temperatura,'g',14));
+           }
+
+}
+
+void Convertor::on_comboBox_6_activated(int index)
+{
+    transTemperaturaC(index);
+}
+
+void Convertor::on_comboBox_20_activated(int index)
+{
+    transTemperaturaC(ui->comboBox_6->currentIndex());
+}
+
+void Convertor::on_pushButton_8_clicked()
+{
+    ui->lineEdit_6->setText("");
+    ui->lineEdit_14->setText("");
+}
+
+//Masa
+
+void Convertor::transMasaKg(int index)
+{
+    if(index == 0) masaKg = ui->lineEdit_7->text().toDouble() * 0.001;
+    else if(index == 1) masaKg = ui->lineEdit_7->text().toDouble();
+    else if(index == 2) masaKg = ui->lineEdit_7->text().toDouble() * 0.453592;
+    else if(index == 3) masaKg = ui->lineEdit_7->text().toDouble() * 0.000001;
+    else if(index == 4) masaKg = ui->lineEdit_7->text().toDouble() * 0.0283495;
+    else if(index == 5) masaKg = ui->lineEdit_7->text().toDouble() * 0.0311035;
+    else if(index == 6) masaKg = ui->lineEdit_7->text().toDouble() * 14.593903;
+    else if(index == 7) masaKg = ui->lineEdit_7->text().toDouble() * 1000;
+
+    transMasa(ui->comboBox_14->currentIndex());
+
+}
+
+void Convertor::transMasa(int index)
+{
+    if(index == 0)
+       {
+            masa = masaKg * 1000;
+            ui->lineEdit_17->setText(QString::number(masa,'g',14));
+       }
+   else
+           if(index == 1)
+           {
+               masa = masaKg;
+               ui->lineEdit_17->setText(QString::number(masa,'g',14));
+           }
+   else
+           if(index == 2)
+           {
+               masa = masaKg * 2.2046244201837775;
+               ui->lineEdit_17->setText(QString::number(masa,'g',14));
+           }
+   else
+           if(index == 3)
+           {
+               masa = masaKg * 1000000;
+               ui->lineEdit_17->setText(QString::number(masa,'g',14));
+           }
+   else
+           if(index == 4)
+           {
+               masa = masaKg * 35.27399072294044;
+               ui->lineEdit_17->setText(QString::number(masa,'g',14));
+           }
+   else
+           if(index == 5)
+           {
+               masa = masaKg * 32.15072258749016;
+               ui->lineEdit_17->setText(QString::number(masa,'g',14));
+           }
+   else
+           if(index == 6)
+           {
+               masa = masaKg * 0.06852176556196105 ;
+               ui->lineEdit_17->setText(QString::number(masa,'g',14));
+           }
+   else
+           if(index == 7)
+           {
+               masa = masaKg * 0.001;
+               ui->lineEdit_17->setText(QString::number(masa,'g',14));
+           }
+
+
+}
+
+void Convertor::on_comboBox_7_activated(int index)
+{
+    transMasaKg(index);
+}
+
+void Convertor::on_comboBox_14_activated(int index)
+{
+    transMasaKg(ui->comboBox_7->currentIndex());
+}
+
+void Convertor::on_pushButton_7_clicked()
+{
+    ui->lineEdit_7->setText("");
+    ui->lineEdit_17->setText("");
+}
+
+//Energie
+
+void Convertor::transEnergieJ(int index)
+{
+    if(index == 0) energieJ = ui->lineEdit_8->text().toDouble() * 1055.06;
+    else if(index == 1) energieJ = ui->lineEdit_8->text().toDouble() * 4.1868;
+    else if(index == 2) energieJ = ui->lineEdit_8->text().toDouble() * 0.0000001;
+    else if(index == 3) energieJ = ui->lineEdit_8->text().toDouble() * 1.3558179483314;
+    else if(index == 4) energieJ = ui->lineEdit_8->text().toDouble() * 0.11298482902;
+    else if(index == 5) energieJ = ui->lineEdit_8->text().toDouble();
+    else if(index == 6) energieJ = ui->lineEdit_8->text().toDouble() * 4186.8;
+    else if(index == 7) energieJ = ui->lineEdit_8->text().toDouble() * 1000;
+    else if(index == 8) energieJ = ui->lineEdit_8->text().toDouble() * 3600000;
+    else if(index == 9) energieJ = ui->lineEdit_8->text().toDouble() * 1055060000000000000;
+    else if(index == 10) energieJ = ui->lineEdit_8->text().toDouble() * 29307600000;
+    else if(index == 11) energieJ = ui->lineEdit_8->text().toDouble() * 29307600000;
+    else if(index == 12) energieJ = ui->lineEdit_8->text().toDouble() * 29307600000;
+    else if(index == 13) energieJ = ui->lineEdit_8->text().toDouble() * 41868000000;
+    else if(index == 14) energieJ = ui->lineEdit_8->text().toDouble() * 41868000000;
+    else if(index == 15) energieJ = ui->lineEdit_8->text().toDouble() * 4186800;
+    else if(index == 16) energieJ = ui->lineEdit_8->text().toDouble() * 3600;
+    else if(index == 17) energieJ = ui->lineEdit_8->text().toDouble();
+
+    transEnergie(ui->comboBox_18->currentIndex());
+
+}
+
+void Convertor::transEnergie(int index)
+{
+    if(index == 0)
+       {
+            energie = energieJ * 0.0009478133944988911;
+            ui->lineEdit_15->setText(QString::number(energie,'g',14));
+       }
+   else
+           if(index == 1)
+           {
+               energie = energieJ * 0.23884589662749595;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 2)
+           {
+               energie = energieJ * 10000000;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 3)
+           {
+               energie = energieJ * 0.7375621492772656;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 4)
+           {
+               energie = energieJ * 8.850745791923844;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 5)
+           {
+               energie = energieJ;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 6)
+           {
+               energie = energieJ * 0.00023884589662749592 ;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 7)
+           {
+               energie = energieJ * 0.001;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 8)
+           {
+               energie = energieJ * 2.7777777777777776e-7;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+
+
+   else
+            if(index == 9)
+           {
+            energie = energieJ * 9.47813394498891e-19;
+            ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 10)
+           {
+               energie = energieJ * 3.412084237535656e-11;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 11)
+           {
+               energie = energieJ * 3.412084237535656e-11;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 12)
+           {
+               energie = energieJ * 3.412084237535656e-11;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 13)
+           {
+               energie = energieJ * 2.3884589662749594e-11;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 14)
+           {
+               energie = energieJ * 2.3884589662749594e-11;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 15)
+           {
+               energie = energieJ * 2.388458966274959e-7 ;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 16)
+           {
+               energie = energieJ * 0.0002777777777777778;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+   else
+           if(index == 17)
+           {
+               energie = energieJ;
+               ui->lineEdit_15->setText(QString::number(energie,'g',14));
+           }
+
+}
+
+void Convertor::on_comboBox_8_activated(int index)
+{
+    transEnergieJ(index);
+}
+
+void Convertor::on_comboBox_18_activated(int index)
+{
+    transEnergieJ(ui->comboBox_8->currentIndex());
+}
+
+void Convertor::on_pushButton_6_clicked()
+{
+    ui->lineEdit_8->setText("");
+    ui->lineEdit_15->setText("");
+
+
 }

@@ -313,12 +313,12 @@
     </property>
     <item>
      <property name="text">
-      <string>an</string>
+      <string>an(365zile)</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>luna</string>
+      <string>luna(30,41 zile)</string>
      </property>
     </item>
     <item>
@@ -348,12 +348,12 @@
     </item>
     <item>
      <property name="text">
-      <string>ds</string>
+      <string>decisecunda(ds)</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>cs</string>
+      <string>centisecunda(cs)</string>
      </property>
     </item>
    </widget>
@@ -368,7 +368,57 @@
     </property>
     <item>
      <property name="text">
+      <string>cm/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>cm/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fph</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fps</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>in/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ips</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>km/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/min</string>
      </property>
     </item>
     <item>
@@ -383,17 +433,52 @@
     </item>
     <item>
      <property name="text">
+      <string>m/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>m/s</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>cm/h</string>
+      <string>mi/s</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>cm/s</string>
+      <string>mi/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mph</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mps</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nmi/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yd/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yd/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yd/s</string>
      </property>
     </item>
    </widget>
@@ -408,7 +493,7 @@
     </property>
     <item>
      <property name="text">
-      <string>°K</string>
+      <string>°C</string>
      </property>
     </item>
     <item>
@@ -458,6 +543,21 @@
     </item>
     <item>
      <property name="text">
+      <string>oz(Av)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Troy)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>slug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>t</string>
      </property>
     </item>
@@ -473,7 +573,27 @@
     </property>
     <item>
      <property name="text">
+      <string>Btu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>cal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>erg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft*lbf</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>in*lbf</string>
      </property>
     </item>
     <item>
@@ -493,12 +613,52 @@
     </item>
     <item>
      <property name="text">
-      <string>W·h</string>
+      <string>kW*h</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>W·s</string>
+      <string>quad Btu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tcc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tep</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>toe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>th</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>W*h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>W*s</string>
      </property>
     </item>
    </widget>
@@ -965,12 +1125,12 @@
     </property>
     <item>
      <property name="text">
-      <string>an</string>
+      <string>an(365 zile)</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>luna</string>
+      <string>luna(30,41 zile)</string>
      </property>
     </item>
     <item>
@@ -1000,52 +1160,12 @@
     </item>
     <item>
      <property name="text">
-      <string>ds</string>
+      <string>decisecunda(ds)</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>cs</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="comboBox_13">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>190</y>
-      <width>73</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>km/h</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>km/s</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>m/h</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>m/s</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>cm/h</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>cm/s</string>
+      <string>centisecunda(cs)</string>
      </property>
     </item>
    </widget>
@@ -1060,7 +1180,7 @@
     </property>
     <item>
      <property name="text">
-      <string>°K</string>
+      <string>°C</string>
      </property>
     </item>
     <item>
@@ -1076,81 +1196,6 @@
     <item>
      <property name="text">
       <string>°R</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="comboBox_14">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>270</y>
-      <width>73</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>g</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>kg</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>lb</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>mg</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>t</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="comboBox_18">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>310</y>
-      <width>73</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>cal</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>J</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>kcal</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>kJ</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>W·h</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>W·s</string>
      </property>
     </item>
    </widget>
@@ -1670,6 +1715,281 @@
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; font-style:italic;&quot;&gt;----&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_13">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>190</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>cm/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>cm/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fph</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fps</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>in/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ips</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mi/s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mi/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mph</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mps</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nmi/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yd/h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yd/min</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Yd/s</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_14">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>270</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>g</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Troy)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>slug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>t</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_18">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>310</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Btu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>cal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>erg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ft*lbf</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>in*lbf</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kcal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kJ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kW*h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>quad Btu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tcc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tep</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>toe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>th</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>W*h</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>W*s</string>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
