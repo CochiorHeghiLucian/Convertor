@@ -21,6 +21,9 @@ private slots:
     void transVitezaMps(int index);
     void transViteza(int index);
 
+    void transPresiunePa(int index);
+    void transPresiune(int index);
+
     void transMasaKg(int index);
     void transMasa(int index);
 
@@ -93,6 +96,12 @@ private slots:
     void on_comboBox_18_activated(int index);
 
     void on_pushButton_6_clicked();
+
+    void on_comboBox_9_activated(int index);
+
+    void on_comboBox_19_activated(int index);
+
+    void on_pushButton_12_clicked();
 
 private:
     Ui::Convertor *ui;

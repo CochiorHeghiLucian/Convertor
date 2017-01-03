@@ -6,12 +6,37 @@
 
 QString rezArie="";
 double  arieMp2,arie,lungimeM,lungime,volumMp3,volum,timpMin,timp,vitezaMps,viteza,temperaturaC,temperatura,masaKg,masa,energieJ,energie;
+double presiunePa,presiune;
 
 Convertor::Convertor(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Convertor)
 {
     ui->setupUi(this);
+
+    ui->comboBox->setCurrentIndex(7);
+    ui->comboBox_12->setCurrentIndex(7);
+
+    ui->comboBox_2->setCurrentIndex(4);
+    ui->comboBox_16->setCurrentIndex(4);
+
+    ui->comboBox_3->setCurrentIndex(9);
+    ui->comboBox_17->setCurrentIndex(9);
+
+    ui->comboBox_4->setCurrentIndex(5);
+    ui->comboBox_15->setCurrentIndex(5);
+
+    ui->comboBox_5->setCurrentIndex(14);
+    ui->comboBox_13->setCurrentIndex(14);
+
+    ui->comboBox_7->setCurrentIndex(1);
+    ui->comboBox_14->setCurrentIndex(1);
+
+    ui->comboBox_8->setCurrentIndex(5);
+    ui->comboBox_18->setCurrentIndex(5);
+
+    ui->comboBox_9->setCurrentIndex(23);
+    ui->comboBox_19->setCurrentIndex(23);
 
 }
 
@@ -937,4 +962,218 @@ void Convertor::on_pushButton_6_clicked()
     ui->lineEdit_15->setText("");
 
 
+}
+
+//Energie
+
+void Convertor::transPresiunePa(int index)
+{
+    if(index == 0) presiunePa = ui->lineEdit_9->text().toDouble() * 98066.5;
+    else if(index == 1) presiunePa = ui->lineEdit_9->text().toDouble() * 101325.2738;
+    else if(index == 2) presiunePa = ui->lineEdit_9->text().toDouble() * 98000;
+    else if(index == 3) presiunePa = ui->lineEdit_9->text().toDouble() * 248.84;
+    else if(index == 4) presiunePa = ui->lineEdit_9->text().toDouble() * 3386.38815789;
+    else if(index == 5) presiunePa = ui->lineEdit_9->text().toDouble() * 98000;
+    else if(index == 6) presiunePa = ui->lineEdit_9->text().toDouble() * 1000;
+    else if(index == 7) presiunePa = ui->lineEdit_9->text().toDouble() * 47.88;
+    else if(index == 8) presiunePa = ui->lineEdit_9->text().toDouble() * 6894.75729317;
+    else if(index == 9) presiunePa = ui->lineEdit_9->text().toDouble() * 98;
+    else if(index == 10) presiunePa = ui->lineEdit_9->text().toDouble() * 9800;
+    else if(index == 11) presiunePa = ui->lineEdit_9->text().toDouble() * 9800;
+    else if(index == 12) presiunePa = ui->lineEdit_9->text().toDouble() * 9800;
+    else if(index == 13) presiunePa = ui->lineEdit_9->text().toDouble() * 9.8;
+    else if(index == 14) presiunePa = ui->lineEdit_9->text().toDouble() * 9.8;
+    else if(index == 15) presiunePa = ui->lineEdit_9->text().toDouble() * 9.8;
+    else if(index == 16) presiunePa = ui->lineEdit_9->text().toDouble() * 133.322368421;
+    else if(index == 17) presiunePa = ui->lineEdit_9->text().toDouble() * 9.8;
+    else if(index == 18) presiunePa = ui->lineEdit_9->text().toDouble() * 9.8;
+    else if(index == 19) presiunePa = ui->lineEdit_9->text().toDouble() * 1000000;
+    else if(index == 20) presiunePa = ui->lineEdit_9->text().toDouble() * 9800;
+    else if(index == 21) presiunePa = ui->lineEdit_9->text().toDouble() * 9800;
+    else if(index == 22) presiunePa = ui->lineEdit_9->text().toDouble() * 1000000;
+    else if(index == 23) presiunePa = ui->lineEdit_9->text().toDouble();
+    else if(index == 24) presiunePa = ui->lineEdit_9->text().toDouble() * 6894.75729317;
+    else if(index == 25) presiunePa = ui->lineEdit_9->text().toDouble() * 133.322368421;
+
+     transPresiune(ui->comboBox_19->currentIndex());
+
+}
+
+void Convertor::transPresiune(int index)
+{
+    if(index == 0)
+       {
+            presiune = presiunePa * 0.000010197162129779282;
+            ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+       }
+   else
+           if(index == 1)
+           {
+               presiune = presiunePa * 0.000009869205998632101;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 2)
+           {
+               presiune = presiunePa * 0.000010204081632653061;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 3)
+           {
+               presiune = presiunePa * 0.0040186465198521135;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 4)
+           {
+               presiune = presiunePa * 0.00029529987508079483;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 5)
+           {
+               presiune = presiunePa * 0.000010204081632653061;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 6)
+           {
+               presiune = presiunePa * 0.001 ;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 7)
+           {
+               presiune = presiunePa * 0.020885547201336674;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 8)
+           {
+               presiune = presiunePa * 0.00014503773773017476;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+
+
+   else
+            if(index == 9)
+           {
+                presiune = presiunePa * 0.01020408163265306;
+                ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 10)
+           {
+               presiune = presiunePa * 0.00010204081632653062;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 11)
+           {
+               presiune = presiunePa * 0.00010204081632653062;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 12)
+           {
+               presiune = presiunePa * 0.00010204081632653062;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 13)
+           {
+               presiune = presiunePa * 0.1020408163265306;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 14)
+           {
+               presiune = presiunePa * 0.1020408163265306;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 15)
+           {
+               presiune = presiunePa * 0.1020408163265306 ;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 16)
+           {
+               presiune = presiunePa * 0.007500616827044659;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 17)
+           {
+               presiune = presiunePa * 0.1020408163265306;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+
+
+    if(index == 18)
+       {
+            presiune = presiunePa * 0.1020408163265306;
+            ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+       }
+   else
+           if(index == 19)
+           {
+               presiune = presiunePa * 0.000001;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 20)
+           {
+               presiune = presiunePa * 0.00010204081632653062;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 21)
+           {
+               presiune = presiunePa * 0.00010204081632653062;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 22)
+           {
+               presiune = presiunePa * 0.000001;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 23)
+           {
+               presiune = presiunePa;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 24)
+           {
+               presiune = presiunePa * 0.00014503773773017476;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+   else
+           if(index == 25)
+           {
+               presiune = presiunePa * 0.007500616827044659;
+               ui->lineEdit_13->setText(QString::number(presiune,'g',14));
+           }
+
+}
+
+void Convertor::on_comboBox_9_activated(int index)
+{
+    transPresiunePa(index);
+}
+
+void Convertor::on_comboBox_19_activated(int index)
+{
+    transPresiunePa(ui->comboBox_9->currentIndex());
+}
+
+void Convertor::on_pushButton_12_clicked()
+{
+    ui->lineEdit_9->setText("");
+    ui->lineEdit_13->setText("");
 }

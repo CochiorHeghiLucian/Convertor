@@ -673,7 +673,32 @@
     </property>
     <item>
      <property name="text">
+      <string>at</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>atm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bar</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>inH2O</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>inHg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kp/cm²</string>
      </property>
     </item>
     <item>
@@ -683,12 +708,62 @@
     </item>
     <item>
      <property name="text">
+      <string>ibf/ft²</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ibf/in²</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>mbar</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Pa</string>
+      <string>mca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mH2O</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmH2O</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmHg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmWC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmWs</string>
      </property>
     </item>
     <item>
@@ -698,8 +773,32 @@
     </item>
     <item>
      <property name="text">
-      <string>N/mm²
-</string>
+      <string>mWC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mWs</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N/mm²</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PSI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>torr</string>
      </property>
     </item>
    </widget>
@@ -1196,47 +1295,6 @@
     <item>
      <property name="text">
       <string>°R</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="comboBox_19">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>350</y>
-      <width>73</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>atm</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>kPa</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>mbar</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Pa</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>MPa</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>N/mm²
-</string>
      </property>
     </item>
    </widget>
@@ -1988,6 +2046,146 @@
     <item>
      <property name="text">
       <string>W*s</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_19">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>350</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>at</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>atm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bar</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>inH2O</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>inHg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kp/cm²</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kPa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ibf/ft²</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ibf/in²</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mbar</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mH2O</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmH2O</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmHg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmWC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mmWs</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MPa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mWC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mWs</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N/mm²</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PSI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>torr</string>
      </property>
     </item>
    </widget>
