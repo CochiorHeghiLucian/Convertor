@@ -6,7 +6,7 @@
 
 QString rezArie="";
 double  arieMp2,arie,lungimeM,lungime,volumMp3,volum,timpMin,timp,vitezaMps,viteza,temperaturaC,temperatura,masaKg,masa,energieJ,energie;
-double presiunePa,presiune;
+double presiunePa,presiune,densitateKgM3,densitate,consumL,consum;
 
 Convertor::Convertor(QWidget *parent) :
     QMainWindow(parent),
@@ -37,6 +37,12 @@ Convertor::Convertor(QWidget *parent) :
 
     ui->comboBox_9->setCurrentIndex(23);
     ui->comboBox_19->setCurrentIndex(23);
+
+    ui->comboBox_10->setCurrentIndex(7);
+    ui->comboBox_11->setCurrentIndex(7);
+
+    ui->comboBox_22->setCurrentIndex(0);
+    ui->comboBox_23->setCurrentIndex(0);
 
 }
 
@@ -151,6 +157,9 @@ void Convertor::on_pushButton_2_clicked()
 {
      ui->lineEdit_12->setText("");
      ui->lineEdit->setText("");
+
+     ui->comboBox->setCurrentIndex(7);
+     ui->comboBox_12->setCurrentIndex(7);
 }
 
 //Lungime
@@ -251,6 +260,9 @@ void Convertor::on_pushButton_3_clicked()
 {
     ui->lineEdit_2->setText("");
     ui->lineEdit_19->setText("");
+
+    ui->comboBox_2->setCurrentIndex(4);
+    ui->comboBox_16->setCurrentIndex(4);
 }
 
 //Volum
@@ -367,6 +379,9 @@ void Convertor::on_pushButton_5_clicked()
 {
     ui->lineEdit_3->setText("");
     ui->lineEdit_20->setText("");
+
+    ui->comboBox_3->setCurrentIndex(9);
+    ui->comboBox_17->setCurrentIndex(9);
 }
 
 //Timp
@@ -461,6 +476,10 @@ void Convertor::on_pushButton_4_clicked()
 {
     ui->lineEdit_4->setText("");
     ui->lineEdit_16->setText("");
+
+    ui->comboBox_4->setCurrentIndex(5);
+    ui->comboBox_15->setCurrentIndex(5);
+
 }
 
 //Viteza
@@ -657,6 +676,9 @@ void Convertor::on_pushButton_9_clicked()
 {
     ui->lineEdit_5->setText("");
     ui->lineEdit_11->setText("");
+
+    ui->comboBox_5->setCurrentIndex(14);
+    ui->comboBox_13->setCurrentIndex(14);
 }
 
 //Temperatura
@@ -717,6 +739,9 @@ void Convertor::on_pushButton_8_clicked()
 {
     ui->lineEdit_6->setText("");
     ui->lineEdit_14->setText("");
+
+    ui->comboBox_6->setCurrentIndex(0);
+    ui->comboBox_20->setCurrentIndex(0);
 }
 
 //Masa
@@ -803,6 +828,10 @@ void Convertor::on_pushButton_7_clicked()
 {
     ui->lineEdit_7->setText("");
     ui->lineEdit_17->setText("");
+
+    ui->comboBox_7->setCurrentIndex(1);
+    ui->comboBox_14->setCurrentIndex(1);
+
 }
 
 //Energie
@@ -961,10 +990,13 @@ void Convertor::on_pushButton_6_clicked()
     ui->lineEdit_8->setText("");
     ui->lineEdit_15->setText("");
 
+    ui->comboBox_8->setCurrentIndex(5);
+    ui->comboBox_18->setCurrentIndex(5);
+
 
 }
 
-//Energie
+//Presiune
 
 void Convertor::transPresiunePa(int index)
 {
@@ -1176,4 +1208,274 @@ void Convertor::on_pushButton_12_clicked()
 {
     ui->lineEdit_9->setText("");
     ui->lineEdit_13->setText("");
+
+    ui->comboBox_9->setCurrentIndex(23);
+    ui->comboBox_19->setCurrentIndex(23);
+}
+
+//Densitate
+
+void Convertor::transDensitateKgM3(int index)
+{
+    if(index == 0) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1000;
+    else if(index == 1) densitateKgM3 = ui->lineEdit_10->text().toDouble();
+    else if(index == 2) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 0.001;
+    else if(index == 3) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1000;
+    else if(index == 4) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1000000;
+    else if(index == 5) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1000000;
+    else if(index == 6) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1000;
+    else if(index == 7) densitateKgM3 = ui->lineEdit_10->text().toDouble();
+    else if(index == 8) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 16.017940092904052;
+    else if(index == 9) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 27679.89858;
+    else if(index == 10) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 99.77637266;
+    else if(index == 11) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 119.8264273;
+    else if(index == 12) densitateKgM3 = ui->lineEdit_10->text().toDouble();
+    else if(index == 13) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 0.001;
+    else if(index == 14) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 0.000001;
+    else if(index == 15) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 6.236023291;
+    else if(index == 16) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 7.489150094;
+    else if(index == 17) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1.001153961;
+    else if(index == 18) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1729.994044;
+    else if(index == 19) densitateKgM3 = ui->lineEdit_10->text().toDouble() * 1000;
+
+    transDensitate(ui->comboBox_11->currentIndex());
+
+}
+
+void Convertor::transDensitate(int index)
+{
+    if(index == 0)
+       {
+            densitate = densitateKgM3 * 0.001;
+            ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+       }
+   else
+           if(index == 1)
+           {
+               densitate = densitateKgM3;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 2)
+           {
+               densitate = densitateKgM3 * 1000;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 3)
+           {
+               densitate = densitateKgM3 * 0.001;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 4)
+           {
+               densitate = densitateKgM3 * 0.000001;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 5)
+           {
+               densitate = densitateKgM3 * 0.000001;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 6)
+           {
+               densitate = densitateKgM3 * 0.001 ;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 7)
+           {
+               densitate = densitateKgM3;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 8)
+           {
+               densitate = densitateKgM3 * 0.06243;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+
+
+   else
+            if(index == 9)
+           {
+                densitate = densitateKgM3 * 0.00003612730000111149;
+                ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 10)
+           {
+               densitate = densitateKgM3 * 0.010022412855272063;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 11)
+           {
+               densitate = densitateKgM3 * 0.00834540445319611;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 12)
+           {
+               densitate = densitateKgM3;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 13)
+           {
+               densitate = densitateKgM3 * 1000;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 14)
+           {
+               densitate = densitateKgM3 * 1000000;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 15)
+           {
+               densitate = densitateKgM3 * 0.16035860569078172 ;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 16)
+           {
+               densitate = densitateKgM3 * 0.13352649999646274;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+   else
+           if(index == 17)
+           {
+               densitate = densitateKgM3 * 0.9988473690911163;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+
+
+    if(index == 18)
+       {
+            densitate = densitateKgM3 * 0.0005780366721308782;
+            ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+       }
+   else
+           if(index == 19)
+           {
+               densitate = densitateKgM3 * 0.001;
+               ui->lineEdit_18->setText(QString::number(densitate,'g',14));
+           }
+
+}
+
+void Convertor::on_comboBox_10_activated(int index)
+{
+    transDensitateKgM3(index);
+}
+
+void Convertor::on_comboBox_11_activated(int index)
+{
+    transDensitateKgM3(ui->comboBox_10->currentIndex());
+}
+
+void Convertor::on_pushButton_11_clicked()
+{
+    ui->lineEdit_10->setText("");
+    ui->lineEdit_18->setText("");
+
+    ui->comboBox_10->setCurrentIndex(7);
+    ui->comboBox_11->setCurrentIndex(7);
+
+}
+
+
+//Consum Combustibil
+
+void Convertor::transConsumL(int index)
+{
+    if(index == 0) consumL = ui->lineEdit_21->text().toDouble();
+    else if(index == 1) consumL = 100 / ui->lineEdit_21->text().toDouble();
+    else if(index == 2) consumL = 235.2145833  / ui->lineEdit_21->text().toDouble();
+    else if(index == 3) consumL = ui->lineEdit_21->text().toDouble() * 2.3521458 ;
+    else if(index == 4) consumL = 282.4809363  / ui->lineEdit_21->text().toDouble();
+    else if(index == 5) consumL = ui->lineEdit_21->text().toDouble() * 2.8248094 ;
+    else if(index == 6) consumL = 62.1371192  / ui->lineEdit_21->text().toDouble();
+    else if(index == 7) consumL = ui->lineEdit_21->text().toDouble() * 0.6213712 ;
+
+     transConsum(ui->comboBox_23->currentIndex());
+}
+
+void Convertor::transConsum(int index)
+{
+    if(index == 0)
+       {
+            consum = consumL;
+            ui->lineEdit_22->setText(QString::number(consum,'g',14));
+       }
+   else
+           if(index == 1)
+           {
+               consum = 100.0 / consumL;
+
+               ui->lineEdit_22->setText(QString::number(consum,'g',14));
+           }
+   else
+           if(index == 2)
+           {
+               consum = 235.2145833 / consumL;
+               ui->lineEdit_22->setText(QString::number(consum,'g',14));
+           }
+   else
+           if(index == 3)
+           {
+               consum = consumL * 0.4251437 ;
+               ui->lineEdit_22->setText(QString::number(consum,'g',14));
+           }
+   else
+           if(index == 4)
+           {
+               consum = 282.4809363 / consumL;
+               ui->lineEdit_22->setText(QString::number(consum,'g',14));
+           }
+   else
+           if(index == 5)
+           {
+               consum = consumL * 0.3540062;
+               ui->lineEdit_22->setText(QString::number(consum,'g',14));
+           }
+   else
+           if(index == 6)
+           {
+               consum = 62.1371192 / consumL;
+               ui->lineEdit_22->setText(QString::number(consum,'g',14));
+           }
+   else
+           if(index == 7)
+           {
+               consum = consumL * 1.609344;
+               ui->lineEdit_22->setText(QString::number(consum,'g',14));
+           }
+}
+
+
+
+void Convertor::on_comboBox_22_activated(int index)
+{
+    transConsumL(index);
+}
+
+void Convertor::on_comboBox_23_activated(int index)
+{
+    transConsumL(ui->comboBox_22->currentIndex());
+}
+
+
+void Convertor::on_pushButton_10_clicked()
+{
+    ui->lineEdit_21->setText("");
+    ui->lineEdit_22->setText("");
+
+    ui->comboBox_22->setCurrentIndex(0);
+    ui->comboBox_23->setCurrentIndex(0);
 }

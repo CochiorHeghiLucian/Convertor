@@ -813,7 +813,37 @@
     </property>
     <item>
      <property name="text">
-      <string> g/m³</string>
+      <string>g/cm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/m³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/ml</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/mm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg/cm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg/l</string>
      </property>
     </item>
     <item>
@@ -823,7 +853,57 @@
     </item>
     <item>
      <property name="text">
-      <string> mg/m³</string>
+      <string>ib/ft³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ib/in³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ib/gal(UK)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ib/gal(US)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mg/cm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mg/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mg/m³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/gal(UK)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/gal(US)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/ft³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/in³</string>
      </property>
     </item>
     <item>
@@ -994,7 +1074,27 @@
     </item>
     <item>
      <property name="text">
+      <string>gal/100mi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UK mi/gal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Uk gal/100 mi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>mi/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>l/100 mi</string>
      </property>
     </item>
    </widget>
@@ -1298,36 +1398,6 @@
      </property>
     </item>
    </widget>
-   <widget class="QComboBox" name="comboBox_11">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>390</y>
-      <width>73</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string> g/m³</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>kg/m³</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string> mg/m³</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>t/m³</string>
-     </property>
-    </item>
-   </widget>
    <widget class="QComboBox" name="comboBox_12">
     <property name="geometry">
      <rect>
@@ -1455,36 +1525,6 @@
     <item>
      <property name="text">
       <string>Yd³</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="comboBox_23">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>430</y>
-      <width>73</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>l/100km</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>km/l</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>mi/gal</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>mi/l</string>
      </property>
     </item>
    </widget>
@@ -2186,6 +2226,166 @@
     <item>
      <property name="text">
       <string>torr</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_11">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>390</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>g/cm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/m³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/ml</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>g/mm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg/cm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg/m³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ib/ft³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ib/in³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ib/gal(UK)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ib/gal(US)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mg/cm³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mg/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mg/m³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/gal(UK)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/gal(US)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/ft³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz(Av)/in³</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>t/m³</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_23">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>430</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>l/100km</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>km/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mi/gal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gal/100mi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UK mi/gal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Uk gal/100 mi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mi/l</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>l/100 mi</string>
      </property>
     </item>
    </widget>
